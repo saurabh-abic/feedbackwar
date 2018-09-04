@@ -1,0 +1,160 @@
+[1, 14:50:05] select * from ebdb.counsellor
+LIMIT 0, 1000
+: Running...
+[1, 14:50:05]
+ select * from ebdb.counsellor
+LIMIT 0, 1000
+: Fetching...
+[1, 14:50:07] 
+select * from ebdb.counsellor
+LIMIT 0, 1000
+: 0 row(s) returned
+[2, 14:50:28]
+ select * from ebdb.counselloradd
+LIMIT 0, 1000
+: Running...
+[2, 14:50:29] 
+select * from ebdb.counselloradd
+LIMIT 0, 1000
+: Fetching...
+[2, 14:50:30]
+ select * from ebdb.counselloradd
+LIMIT 0, 1000
+: 1 row(s) returned
+[3, 14:51:01] 
+select * from ebdb.facultydetails
+LIMIT 0, 1000
+: Running...
+[3, 14:51:01] 
+select * from ebdb.facultydetails
+LIMIT 0, 1000
+: Fetching...
+[3, 14:51:03] 
+select * from ebdb.facultydetails
+LIMIT 0, 1000
+: 4 row(s) returned
+[4, 14:51:43] 
+delete from ebdb.facultydetails: Running...
+[4, 14:51:43] 
+delete from ebdb.facultydetails: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[5, 14:52:31] 
+delete from ebdb.studentdetails: Running...
+[5, 14:52:32] delete from ebdb.studentdetails: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[6, 14:53:05] 
+delete from ebdb.studentdetails where roll=1403310188: Running...
+[6, 14:53:06]
+ delete from ebdb.studentdetails where roll=1403310188: Error Code: 1054. Unknown column 'roll' in 'where clause'
+[7, 14:53:15]
+ delete from ebdb.studentdetails where rollno=1403310188: Running...
+[7, 14:53:15]
+ delete from ebdb.studentdetails where rollno=1403310188: Error Code: 1054. Unknown column 'rollno' in 'where clause'
+[8, 14:53:45]
+ delete from ebdb.studentdetails where id=1403310188: Running...
+[8, 14:53:45] 
+delete from ebdb.studentdetails where id=1403310188: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[9, 14:56:36] 
+select * from ebdb.studentdetails
+LIMIT 0, 1000
+: Running...
+[9, 14:56:36] 
+select * from ebdb.studentdetails
+LIMIT 0, 1000
+: Fetching...
+[9, 14:56:38] 
+select * from ebdb.studentdetails
+LIMIT 0, 1000
+: 8 row(s) returned
+[10, 14:57:15] delete from ebdb.studentdetails: Running...
+[10, 14:57:15]
+ delete from ebdb.studentdetails: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[11, 14:57:56]
+ delete from ebdb.studentdetails: Running...
+[11, 14:57:56] 
+delete from ebdb.studentdetails: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[12, 14:57:59] 
+delete from ebdb.studentdetails: Running...
+[12, 14:57:59] 
+delete from ebdb.studentdetails: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[1, 14:58:24] 
+delete from ebdb.studentdetails: Running...
+[1, 14:58:24] 
+delete from ebdb.studentdetails: 8 row(s) affected
+[2, 14:58:52] 
+delete from ebdd.facultydetails: Running...
+[2, 14:58:52]
+ delete from ebdd.facultydetails: Error Code: 1146.
+ Table 'ebdd.facultydetails' doesn't exist
+[3, 14:59:06]
+ delete from ebdb.facultydetails: Running...
+[3, 14:59:06] 
+delete from ebdb.facultydetails: 4 row(s) affected
+[4, 14:59:45]
+ delete from ebdb.counselloradd: Running...
+[4, 14:59:45]
+ delete from ebdb.counselloradd: 1 row(s) affected
+[5, 14:59:59] 
+delete from ebdb.feedbackdetails: Running...
+[5, 14:59:59] 
+delete from ebdb.feedbackdetails: 2 row(s) affected
+[6, 15:00:07] 
+
+delete from ebdb.feedback: Running...
+[6, 15:00:08] 
+delete from ebdb.feedback: 1 row(s) affected
+[7, 15:00:26]
+ delete from ebdb.studentid: Running...
+[7, 15:00:26]
+ delete from ebdb.studentid: 8 row(s) affected
+[8, 15:00:48]
+ select * from studentid
+LIMIT 0, 1000
+: Running...
+[8, 15:00:49]
+ select * from studentid
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[9, 15:00:59]
+ select * from ebdb.studentid
+LIMIT 0, 1000
+: Running...
+[9, 15:01:00] 
+select * from ebdb.studentid
+LIMIT 0, 1000
+: Fetching...
+[9, 15:01:01]
+ select * from ebdb.studentid
+LIMIT 0, 1000
+: 0 row(s) returned
+
+
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='14:50:05'>select * from ebdb.counsellor</ENTRY>
+<ENTRY timestamp='14:50:28'>select * from ebdb.counselloradd</ENTRY>
+<ENTRY timestamp='14:51:01'>select * from ebdb.facultydetails</ENTRY>
+<ENTRY timestamp='14:51:43'>delete from ebdb.facultydetails</ENTRY>
+<ENTRY timestamp='14:52:31'>delete from ebdb.studentdetails</ENTRY>
+<ENTRY timestamp='14:53:05'>delete from ebdb.studentdetails where roll=1403310188</ENTRY>
+<ENTRY timestamp='14:53:15'>delete from ebdb.studentdetails where rollno=1403310188</ENTRY>
+<ENTRY timestamp='14:53:45'>delete from ebdb.studentdetails where id=1403310188</ENTRY>
+<ENTRY timestamp='14:56:36'>select * from ebdb.studentdetails</ENTRY>
+<ENTRY timestamp='14:57:14'>delete from ebdb.studentdetails</ENTRY>
+<ENTRY timestamp='14:57:56'>~</ENTRY>
+<ENTRY timestamp='14:57:59'>~</ENTRY>
+<ENTRY timestamp='14:58:24'>delete from ebdb.studentdetails</ENTRY>
+<ENTRY timestamp='14:58:52'>delete from ebdd.facultydetails</ENTRY>
+<ENTRY timestamp='14:59:06'>delete from ebdb.facultydetails</ENTRY>
+<ENTRY timestamp='14:59:45'>delete from ebdb.counselloradd</ENTRY>
+<ENTRY timestamp='14:59:59'>delete from ebdb.feedbackdetails</ENTRY>
+<ENTRY timestamp='15:00:07'>delete from ebdb.feedback</ENTRY>
+<ENTRY timestamp='15:00:26'>delete from ebdb.studentid</ENTRY>
+<ENTRY timestamp='15:00:48'>select * from studentid</ENTRY>
+<ENTRY timestamp='15:00:59'>select * from ebdb.studentid</ENTRY>
